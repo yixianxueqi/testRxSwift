@@ -60,6 +60,26 @@
                                             <segue destination="JqX-4J-EbD" kind="push" id="PoY-KR-GYM"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="fV4-eb-YuL" style="IBUITableViewCellStyleDefault" id="8HZ-QO-ebZ">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8HZ-QO-ebZ" id="UEn-Jc-mMn">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fV4-eb-YuL">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Iu3-fT-s1F" kind="push" id="rse-XQ-uh0"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -84,15 +104,25 @@
             </objects>
             <point key="canvasLocation" x="2552.8000000000002" y="-816.79160419790117"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--DMTableViewController-->
         <scene sceneID="gfB-Rr-BjA">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="DMTableViewController" id="JqX-4J-EbD" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="DMTableViewController" id="JqX-4J-EbD" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Zqi-1r-26T"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ven-bY-5Hp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2684" y="-771.8140929535233"/>
+            <point key="canvasLocation" x="2793" y="-718"/>
+        </scene>
+        <!--DMLocationViewController-->
+        <scene sceneID="vA8-Ic-zbd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DMLocationViewController" id="Iu3-fT-s1F" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LlU-DM-sUd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLO-uU-wJ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2784" y="-649"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="O9q-dL-FEg">

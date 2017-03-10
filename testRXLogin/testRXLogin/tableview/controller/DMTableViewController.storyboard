@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lkV-xd-Hq0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="F4z-ZN-nWx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,32 +10,40 @@
     </dependencies>
     <scenes>
         <!--Table View Controller-->
-        <scene sceneID="K2L-HT-dW0">
+        <scene sceneID="EQN-X0-NMW">
             <objects>
-                <tableViewController id="lkV-xd-Hq0" customClass="DMTableViewController" customModule="testRXLogin" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dhh-rh-1je">
+                <viewController id="F4z-ZN-nWx" customClass="DMTableViewController" customModule="testRXLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="she-Y6-ymt"/>
+                        <viewControllerLayoutGuide type="bottom" id="VbL-fH-Mm9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bk3-sA-bDw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="piY-p0-hCE">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="F4z-ZN-nWx" id="jHx-ve-uUX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="oP8-6a-EZx">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oP8-6a-EZx" id="tLB-fr-LNq">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="lkV-xd-Hq0" id="4pj-Ie-JpL"/>
-                            <outlet property="delegate" destination="lkV-xd-Hq0" id="4Fv-kd-pwL"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3Qc-sD-3un" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="piY-p0-hCE" secondAttribute="trailing" id="CmI-JI-hLU"/>
+                            <constraint firstItem="piY-p0-hCE" firstAttribute="leading" secondItem="bk3-sA-bDw" secondAttribute="leading" id="X9M-lG-dXy"/>
+                            <constraint firstItem="piY-p0-hCE" firstAttribute="top" secondItem="she-Y6-ymt" secondAttribute="bottom" id="njm-JY-mi1"/>
+                            <constraint firstItem="VbL-fH-Mm9" firstAttribute="top" secondItem="piY-p0-hCE" secondAttribute="bottom" id="r3p-nN-kKj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableview" destination="piY-p0-hCE" id="yLI-ry-Lia"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8S-d3-vp0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94" y="128"/>
+            <point key="canvasLocation" x="423" y="191"/>
         </scene>
     </scenes>
 </document>

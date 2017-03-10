@@ -10,12 +10,19 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class DMTableViewController: UITableViewController {
+class DMTableViewController: UIViewController, UITableViewDelegate {
 
+    @IBOutlet weak var tableview: UITableView!
+    
+    let disposeBag = DisposeBag()
+    let items = Observable.just(
+        (0...10).map { "\($0)" }
+    )
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    
 
     }
-
 
 }

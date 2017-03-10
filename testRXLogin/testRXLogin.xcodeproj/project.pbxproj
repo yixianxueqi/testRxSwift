@@ -23,6 +23,12 @@
 		DB8CA9A31E6FEDA4005DE3C1 /* DMUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8CA9A21E6FEDA4005DE3C1 /* DMUser.swift */; };
 		DBFD30DC1E724CA80042F28A /* DMTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD30DB1E724CA80042F28A /* DMTableViewController.swift */; };
 		DBFD30DE1E724CB00042F28A /* DMTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFD30DD1E724CB00042F28A /* DMTableViewController.storyboard */; };
+		DBFD30E31E7284B70042F28A /* DMLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD30E21E7284B70042F28A /* DMLocationViewController.swift */; };
+		DBFD30E51E7284C60042F28A /* DMLocationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFD30E41E7284C60042F28A /* DMLocationViewController.storyboard */; };
+		DBFD30E71E7285450042F28A /* DMLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD30E61E7285450042F28A /* DMLocationService.swift */; };
+		DBFD30E91E7285C00042F28A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFD30E81E7285C00042F28A /* CoreLocation.framework */; };
+		DBFD30EE1E728A050042F28A /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD30EC1E728A050042F28A /* CLLocationManager+Rx.swift */; };
+		DBFD30EF1E728A050042F28A /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD30ED1E728A050042F28A /* RxCLLocationManagerDelegateProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +52,12 @@
 		DB8CA9A21E6FEDA4005DE3C1 /* DMUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMUser.swift; sourceTree = "<group>"; };
 		DBFD30DB1E724CA80042F28A /* DMTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMTableViewController.swift; sourceTree = "<group>"; };
 		DBFD30DD1E724CB00042F28A /* DMTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DMTableViewController.storyboard; sourceTree = "<group>"; };
+		DBFD30E21E7284B70042F28A /* DMLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMLocationViewController.swift; sourceTree = "<group>"; };
+		DBFD30E41E7284C60042F28A /* DMLocationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DMLocationViewController.storyboard; sourceTree = "<group>"; };
+		DBFD30E61E7285450042F28A /* DMLocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMLocationService.swift; sourceTree = "<group>"; };
+		DBFD30E81E7285C00042F28A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DBFD30EC1E728A050042F28A /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
+		DBFD30ED1E728A050042F28A /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBFD30E91E7285C00042F28A /* CoreLocation.framework in Frameworks */,
 				8EE8FBDD966F777FA5DA6AA9 /* Pods_testRXLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +76,7 @@
 		67134CC1F5708E0C961DEC0A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DBFD30E81E7285C00042F28A /* CoreLocation.framework */,
 				B861ECA4B0DE0CE0942D8B3F /* Pods_testRXLogin.framework */,
 			);
 			name = Frameworks;
@@ -98,6 +112,7 @@
 		DB8CA9761E6E9053005DE3C1 /* testRXLogin */ = {
 			isa = PBXGroup;
 			children = (
+				DBFD30DF1E72846B0042F28A /* location */,
 				DBFD30D61E72467E0042F28A /* tableview */,
 				DB8CA9891E6EA56E005DE3C1 /* login */,
 				DB8CA9771E6E9053005DE3C1 /* AppDelegate.swift */,
@@ -198,6 +213,34 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		DBFD30DF1E72846B0042F28A /* location */ = {
+			isa = PBXGroup;
+			children = (
+				DBFD30E11E7284910042F28A /* service */,
+				DBFD30E01E72848A0042F28A /* controller */,
+			);
+			path = location;
+			sourceTree = "<group>";
+		};
+		DBFD30E01E72848A0042F28A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBFD30E21E7284B70042F28A /* DMLocationViewController.swift */,
+				DBFD30E41E7284C60042F28A /* DMLocationViewController.storyboard */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		DBFD30E11E7284910042F28A /* service */ = {
+			isa = PBXGroup;
+			children = (
+				DBFD30EC1E728A050042F28A /* CLLocationManager+Rx.swift */,
+				DBFD30ED1E728A050042F28A /* RxCLLocationManagerDelegateProxy.swift */,
+				DBFD30E61E7285450042F28A /* DMLocationService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -233,6 +276,7 @@
 				TargetAttributes = {
 					DB8CA9731E6E9053005DE3C1 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = D4D6AYNVN5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -261,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB8CA9901E6EA5EE005DE3C1 /* DMLoginViewController.storyboard in Resources */,
+				DBFD30E51E7284C60042F28A /* DMLocationViewController.storyboard in Resources */,
 				DB8CA9821E6E9053005DE3C1 /* LaunchScreen.storyboard in Resources */,
 				DB8CA97F1E6E9053005DE3C1 /* Assets.xcassets in Resources */,
 				DBFD30DE1E724CB00042F28A /* DMTableViewController.storyboard in Resources */,
@@ -328,11 +373,15 @@
 				DB8CA98E1E6EA5D3005DE3C1 /* DMLoginViewController.swift in Sources */,
 				DB8CA9981E6EAF8E005DE3C1 /* DMLoginProtocols.swift in Sources */,
 				DB8CA9781E6E9053005DE3C1 /* AppDelegate.swift in Sources */,
+				DBFD30E71E7285450042F28A /* DMLocationService.swift in Sources */,
 				DB8CA9921E6EAADA005DE3C1 /* DMLoginViewModel.swift in Sources */,
 				DB8CA99A1E6FD96A005DE3C1 /* DMLoginHttp.swift in Sources */,
 				DB8CA9941E6EAB4B005DE3C1 /* DMLoginService.swift in Sources */,
 				DBFD30DC1E724CA80042F28A /* DMTableViewController.swift in Sources */,
 				DB8CA9A31E6FEDA4005DE3C1 /* DMUser.swift in Sources */,
+				DBFD30EF1E728A050042F28A /* RxCLLocationManagerDelegateProxy.swift in Sources */,
+				DBFD30EE1E728A050042F28A /* CLLocationManager+Rx.swift in Sources */,
+				DBFD30E31E7284B70042F28A /* DMLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,9 +503,12 @@
 			baseConfigurationReference = 53127C1546A3DA26A97E75EF /* Pods-testRXLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D4D6AYNVN5;
 				INFOPLIST_FILE = testRXLogin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D TRACE_RESOURCES";
 				PRODUCT_BUNDLE_IDENTIFIER = com.isoftstone.testRXLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -468,9 +520,12 @@
 			baseConfigurationReference = 2373319AF66B37107E5976B6 /* Pods-testRXLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D4D6AYNVN5;
 				INFOPLIST_FILE = testRXLogin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.isoftstone.testRXLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
