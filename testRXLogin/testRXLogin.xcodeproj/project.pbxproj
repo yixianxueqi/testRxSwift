@@ -21,6 +21,8 @@
 		DB8CA9981E6EAF8E005DE3C1 /* DMLoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8CA9971E6EAF8E005DE3C1 /* DMLoginProtocols.swift */; };
 		DB8CA99A1E6FD96A005DE3C1 /* DMLoginHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8CA9991E6FD96A005DE3C1 /* DMLoginHttp.swift */; };
 		DB8CA9A31E6FEDA4005DE3C1 /* DMUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8CA9A21E6FEDA4005DE3C1 /* DMUser.swift */; };
+		DBFD30DC1E724CA80042F28A /* DMTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD30DB1E724CA80042F28A /* DMTableViewController.swift */; };
+		DBFD30DE1E724CB00042F28A /* DMTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFD30DD1E724CB00042F28A /* DMTableViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		DB8CA9971E6EAF8E005DE3C1 /* DMLoginProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMLoginProtocols.swift; sourceTree = "<group>"; };
 		DB8CA9991E6FD96A005DE3C1 /* DMLoginHttp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMLoginHttp.swift; sourceTree = "<group>"; };
 		DB8CA9A21E6FEDA4005DE3C1 /* DMUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMUser.swift; sourceTree = "<group>"; };
+		DBFD30DB1E724CA80042F28A /* DMTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMTableViewController.swift; sourceTree = "<group>"; };
+		DBFD30DD1E724CB00042F28A /* DMTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DMTableViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,8 @@
 		DBFD30D71E7248BB0042F28A /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				DBFD30DB1E724CA80042F28A /* DMTableViewController.swift */,
+				DBFD30DD1E724CB00042F28A /* DMTableViewController.storyboard */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -257,6 +263,7 @@
 				DB8CA9901E6EA5EE005DE3C1 /* DMLoginViewController.storyboard in Resources */,
 				DB8CA9821E6E9053005DE3C1 /* LaunchScreen.storyboard in Resources */,
 				DB8CA97F1E6E9053005DE3C1 /* Assets.xcassets in Resources */,
+				DBFD30DE1E724CB00042F28A /* DMTableViewController.storyboard in Resources */,
 				DB8CA97D1E6E9053005DE3C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +331,7 @@
 				DB8CA9921E6EAADA005DE3C1 /* DMLoginViewModel.swift in Sources */,
 				DB8CA99A1E6FD96A005DE3C1 /* DMLoginHttp.swift in Sources */,
 				DB8CA9941E6EAB4B005DE3C1 /* DMLoginService.swift in Sources */,
+				DBFD30DC1E724CA80042F28A /* DMTableViewController.swift in Sources */,
 				DB8CA9A31E6FEDA4005DE3C1 /* DMUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
