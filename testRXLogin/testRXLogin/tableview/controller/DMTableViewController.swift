@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 class DMTableViewController: UIViewController, UITableViewDelegate {
-
+    
     @IBOutlet weak var tableview: UITableView!
     
     let disposeBag = DisposeBag()
@@ -21,8 +21,31 @@ class DMTableViewController: UIViewController, UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-
+        
+        items
+            .bindTo(tableview.rx.items(cellIdentifier: "cell", cellType: UITableViewCell.self)) { (row, element, cell) in
+                cell.textLabel?.text = "\(element) @ row \(row)"
+            }
+            .addDisposableTo(disposeBag)
+        
+        tableview.rx
+            .modelSelected(String.self)
+            .subscribe {
+                print("click: \($0)");
+                DMAlert.showAlert(on: self.view, message: String.init(describing: $0))
+            }
+            .addDisposableTo(disposeBag)
+        
+        tableview.rx
+        .itemAccessoryButtonTapped
+        .subscribe {
+            print("taped: \($0)")
+            DMAlert.showAlert(on: self.view, message: String.init(describing: $0))
+        }
+        .addDisposableTo(disposeBag)
+        
     }
-
 }
+
+
+

@@ -9,5 +9,6 @@ pod 'RxSwift', '3.0.0'
 pod 'RxCocoa', '3.0.0'
 pod 'ObjectMapper', '2.2.0'
 pod 'SwiftyJSON', '3.1.4'
+pod 'MBProgressHUD', '1.0.0'
 
 end

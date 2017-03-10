@@ -29,6 +29,7 @@
 		DBFD30E91E7285C00042F28A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFD30E81E7285C00042F28A /* CoreLocation.framework */; };
 		DBFD30EE1E728A050042F28A /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD30EC1E728A050042F28A /* CLLocationManager+Rx.swift */; };
 		DBFD30EF1E728A050042F28A /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD30ED1E728A050042F28A /* RxCLLocationManagerDelegateProxy.swift */; };
+		DBFD30F11E72B2590042F28A /* DMAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD30F01E72B2590042F28A /* DMAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		DBFD30E81E7285C00042F28A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DBFD30EC1E728A050042F28A /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
 		DBFD30ED1E728A050042F28A /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
+		DBFD30F01E72B2590042F28A /* DMAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 		DBFD30D91E7248CC0042F28A /* service */ = {
 			isa = PBXGroup;
 			children = (
+				DBFD30F01E72B2590042F28A /* DMAlert.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				DBFD30DC1E724CA80042F28A /* DMTableViewController.swift in Sources */,
 				DB8CA9A31E6FEDA4005DE3C1 /* DMUser.swift in Sources */,
 				DBFD30EF1E728A050042F28A /* RxCLLocationManagerDelegateProxy.swift in Sources */,
+				DBFD30F11E72B2590042F28A /* DMAlert.swift in Sources */,
 				DBFD30EE1E728A050042F28A /* CLLocationManager+Rx.swift in Sources */,
 				DBFD30E31E7284B70042F28A /* DMLocationViewController.swift in Sources */,
 			);

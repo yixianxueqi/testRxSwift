@@ -33,9 +33,19 @@ class DMLocationViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         view.addSubview(notEnableView)
-        locationService.authorized
-            .drive(self.notEnableView.rx.isHidden)
-            .addDisposableTo(disposeBag)
+        
+//        locationService.authorized
+//            .drive(self.notEnableView.rx.isHidden)
+//            .addDisposableTo(disposeBag)
+        
+        /*
+         等价于上面这种写法
+         差异：块 内可以做更多的操作，且不需额外定义
+             上面这种写法，需要额外定义（若RXCocoa没有实现），例如：lable显示经纬度
+         */
+        locationService.authorized.drive(onNext: { [weak self]  in
+            self?.notEnableView.isHidden = $0
+        }).addDisposableTo(disposeBag)
      
         locationService.location
             .drive(self.label.rx.coordinates)
