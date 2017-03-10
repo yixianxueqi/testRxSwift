@@ -94,6 +94,7 @@
 		DB8CA9761E6E9053005DE3C1 /* testRXLogin */ = {
 			isa = PBXGroup;
 			children = (
+				DBFD30D61E72467E0042F28A /* tableview */,
 				DB8CA9891E6EA56E005DE3C1 /* login */,
 				DB8CA9771E6E9053005DE3C1 /* AppDelegate.swift */,
 				DB8CA9791E6E9053005DE3C1 /* ViewController.swift */,
@@ -148,6 +149,45 @@
 			isa = PBXGroup;
 			children = (
 				DB8CA9A21E6FEDA4005DE3C1 /* DMUser.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DBFD30D61E72467E0042F28A /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				DBFD30DA1E7248D10042F28A /* model */,
+				DBFD30D91E7248CC0042F28A /* service */,
+				DBFD30D81E7248C20042F28A /* viewmodel */,
+				DBFD30D71E7248BB0042F28A /* controller */,
+			);
+			path = tableview;
+			sourceTree = "<group>";
+		};
+		DBFD30D71E7248BB0042F28A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		DBFD30D81E7248C20042F28A /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		DBFD30D91E7248CC0042F28A /* service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		DBFD30DA1E7248D10042F28A /* model */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = model;
 			sourceTree = "<group>";
