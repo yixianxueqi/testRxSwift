@@ -71,7 +71,6 @@ extension DMLoginHttpType: TargetType {
             return JSONEncoding.default
         }
     }
-    
 }
 
 

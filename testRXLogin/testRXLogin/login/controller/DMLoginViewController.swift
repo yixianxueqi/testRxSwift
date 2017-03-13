@@ -50,7 +50,9 @@ class DMLoginViewController: UIViewController {
             self?.signUpButton.alpha = $0 ? 1.0: 0.5
         }).addDisposableTo(disposeBag)
         
-        viewModel.signed.drive(onNext: { [weak self] in
+        viewModel.signed
+            .throttle(0.5)
+            .drive(onNext: { [weak self] in
             print("signUp success \($0)")
             self?.alert()
         }).addDisposableTo(disposeBag)

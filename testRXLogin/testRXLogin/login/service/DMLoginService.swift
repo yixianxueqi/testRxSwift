@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import RxSwift
 import Moya
 import SwiftyJSON
+import RxSwift
 
 //校验
 class DMLoginValidationService: DMLoginValidService {
@@ -72,31 +72,56 @@ class DMLoginHttpServiceImp: DMLoginHttpService {
     
     static let httpService = DMLoginHttpServiceImp()
     private init() {}
-    let provider = RxMoyaProvider<DMLoginHttpType>()
     let disposeBag = DisposeBag()
+    let provider = RxMoyaProvider<DMLoginHttpType>.init(endpointClosure: DMDeployProvider.endpointClosure, manager: DMDeployProvider.defaultAlamofireManager(), plugins: [NetworkLoggerPlugin(), DMMoyaHttpErrorHandlePlugin()])
     
     func checkUserNameAvaliable(userName: String) -> Observable<Bool> {
         
-        return provider.request(.checkUserName(username: userName))
+        //原始无缓存版
+//        return provider.request(.checkUserName(username: userName))
+//            .debug()
+//            .distinctUntilChanged()
+//            .map {  response in
+////                print("response: \(response.request?.url)")
+//                return response.statusCode == 404
+//            }
+//            .catchErrorJustReturn(false)
+        //采用缓存版
+        return provider
+            .tryCache(target: .checkUserName(username: userName), cacheType: .onlyRequest)
             .debug()
+            .distinctUntilChanged()
             .map {  response in
-//                print("response: \(response.request?.url)")
+                //                print("response: \(response.request?.url)")
                 return response.statusCode == 404
             }
             .catchErrorJustReturn(false)
     }
     
     func signUp(userName: String, pwd: String) -> Observable<Bool> {
-        
-        return provider.request(.signUp(username: userName, pwd: pwd))
-        .debug()
-        .mapJSON()
-        .map({ result in
-            let user = DMUser(JSONString: JSON(result)["data"].string!)
-            print("userLogin: \(user?.userName, user?.password)")
-            return true
-        })
-        .catchErrorJustReturn(false)
+        //原始无缓存版
+//        return provider.request(.signUp(username: userName, pwd: pwd))
+//        .debug()
+//        .distinctUntilChanged()
+//        .mapJSON()
+//        .map({ result in
+//            let user = DMUser(JSONString: JSON(result)["data"].string!)
+//            print("userLogin: \(user?.userName, user?.password)")
+//            return true
+//        })
+//        .catchErrorJustReturn(false)
+        //采用缓存版
+        return provider
+            .tryCache(target: .signUp(username: userName, pwd: pwd), cacheType: .cacheThenRequest)
+            .debug()
+            .distinctUntilChanged()
+            .mapJSON()
+            .map({ result in
+                let user = DMUser(JSONString: JSON(result)["data"].string!)
+                print("userLogin: \(user?.userName, user?.password)")
+                return true
+            })
+            .catchErrorJustReturn(false)
     }
 }
 

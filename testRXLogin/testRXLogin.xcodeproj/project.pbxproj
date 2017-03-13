@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8EE8FBDD966F777FA5DA6AA9 /* Pods_testRXLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B861ECA4B0DE0CE0942D8B3F /* Pods_testRXLogin.framework */; };
+		DB64E3101E766FA30007368E /* DMDeployProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64E30F1E766FA30007368E /* DMDeployProvider.swift */; };
+		DB64E3121E7672190007368E /* DMMoyaHttpErrorHandlePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64E3111E7672190007368E /* DMMoyaHttpErrorHandlePlugin.swift */; };
+		DB64E3141E7677650007368E /* DMCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64E3131E7677650007368E /* DMCache.swift */; };
 		DB8CA9781E6E9053005DE3C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8CA9771E6E9053005DE3C1 /* AppDelegate.swift */; };
 		DB8CA97A1E6E9053005DE3C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8CA9791E6E9053005DE3C1 /* ViewController.swift */; };
 		DB8CA97D1E6E9053005DE3C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB8CA97B1E6E9053005DE3C1 /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 		2373319AF66B37107E5976B6 /* Pods-testRXLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testRXLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-testRXLogin/Pods-testRXLogin.release.xcconfig"; sourceTree = "<group>"; };
 		53127C1546A3DA26A97E75EF /* Pods-testRXLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testRXLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testRXLogin/Pods-testRXLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		B861ECA4B0DE0CE0942D8B3F /* Pods_testRXLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testRXLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB64E30F1E766FA30007368E /* DMDeployProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMDeployProvider.swift; sourceTree = "<group>"; };
+		DB64E3111E7672190007368E /* DMMoyaHttpErrorHandlePlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMMoyaHttpErrorHandlePlugin.swift; sourceTree = "<group>"; };
+		DB64E3131E7677650007368E /* DMCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMCache.swift; sourceTree = "<group>"; };
 		DB8CA9741E6E9053005DE3C1 /* testRXLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testRXLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8CA9771E6E9053005DE3C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB8CA9791E6E9053005DE3C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +168,9 @@
 				DB8CA9931E6EAB4B005DE3C1 /* DMLoginService.swift */,
 				DB8CA9971E6EAF8E005DE3C1 /* DMLoginProtocols.swift */,
 				DB8CA9991E6FD96A005DE3C1 /* DMLoginHttp.swift */,
+				DB64E30F1E766FA30007368E /* DMDeployProvider.swift */,
+				DB64E3111E7672190007368E /* DMMoyaHttpErrorHandlePlugin.swift */,
+				DB64E3131E7677650007368E /* DMCache.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -381,9 +390,12 @@
 				DB8CA99A1E6FD96A005DE3C1 /* DMLoginHttp.swift in Sources */,
 				DB8CA9941E6EAB4B005DE3C1 /* DMLoginService.swift in Sources */,
 				DBFD30DC1E724CA80042F28A /* DMTableViewController.swift in Sources */,
+				DB64E3121E7672190007368E /* DMMoyaHttpErrorHandlePlugin.swift in Sources */,
+				DB64E3101E766FA30007368E /* DMDeployProvider.swift in Sources */,
 				DB8CA9A31E6FEDA4005DE3C1 /* DMUser.swift in Sources */,
 				DBFD30EF1E728A050042F28A /* RxCLLocationManagerDelegateProxy.swift in Sources */,
 				DBFD30F11E72B2590042F28A /* DMAlert.swift in Sources */,
+				DB64E3141E7677650007368E /* DMCache.swift in Sources */,
 				DBFD30EE1E728A050042F28A /* CLLocationManager+Rx.swift in Sources */,
 				DBFD30E31E7284B70042F28A /* DMLocationViewController.swift in Sources */,
 			);
