@@ -39,7 +39,7 @@ class DMLoginViewModel {
         }
         validatePwd = input.pwd.map {
             return validService.validationPassword($0)
-        }
+            }
         validateRepeatPwd = Driver.combineLatest(input.pwd, input.repeatPwd, resultSelector: validService.validationRepeatPwd)
         
         signBtnEnable = Driver.combineLatest(validateUserName, validatePwd, validateRepeatPwd) {
