@@ -15,27 +15,29 @@ class DMTableViewController2: UIViewController, UITableViewDelegate {
     @IBOutlet weak var tableview: UITableView!
     let disposeBag = DisposeBag()
     let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, Double>>()
+    let btn = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        automaticallyAdjustsScrollViewInsets = false
         let dataSource = self.dataSource
         let items = Observable.just([
             SectionModel(model: "First section", items: [
-                1.0,
-                2.0,
-                3.0
+                11.0,
+                22.0,
+                33.0
                 ]),
             SectionModel(model: "Second section", items: [
-                1.0,
-                2.0,
-                3.0
+                11.0,
+                22.0,
+                33.0
                 ]),
             SectionModel(model: "Third section", items: [
-                1.0,
-                2.0,
-                3.0
+                11.0,
+                22.0,
+                33.0
                 ])
             ])
         dataSource.configureCell = { list, tableview, indexPath, item in
@@ -61,8 +63,9 @@ class DMTableViewController2: UIViewController, UITableViewDelegate {
         tableview.rx
             .setDelegate(self)
             .addDisposableTo(disposeBag)
-        
+     
     }
+    
     // MARK: - UITableViewDelegate
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let label = UILabel(frame: CGRect.zero)

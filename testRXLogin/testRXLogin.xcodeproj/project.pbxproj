@@ -27,6 +27,12 @@
 		DB0F4F311E79455500F1D1A5 /* Changeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F301E79455500F1D1A5 /* Changeset.swift */; };
 		DB0F4F331E79457600F1D1A5 /* UI+SectionedViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F321E79457600F1D1A5 /* UI+SectionedViewType.swift */; };
 		DB0F4F351E7945B000F1D1A5 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F341E7945B000F1D1A5 /* Optional+Extensions.swift */; };
+		DB0F4F481E8263A200F1D1A5 /* DMTableViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F471E8263A200F1D1A5 /* DMTableViewController3.swift */; };
+		DB0F4F4A1E8263B400F1D1A5 /* DMTableViewController3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB0F4F491E8263B400F1D1A5 /* DMTableViewController3.storyboard */; };
+		DB278C2A1E827D7A00326881 /* DMViewModel3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB278C291E827D7A00326881 /* DMViewModel3.swift */; };
+		DB278C2C1E827DA900326881 /* DMService3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB278C2B1E827DA900326881 /* DMService3.swift */; };
+		DB278C2F1E8287A700326881 /* DMTableViewCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB278C2D1E8287A700326881 /* DMTableViewCell3.swift */; };
+		DB278C301E8287A700326881 /* DMTableViewCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB278C2E1E8287A700326881 /* DMTableViewCell3.xib */; };
 		DB64E3101E766FA30007368E /* DMDeployProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64E30F1E766FA30007368E /* DMDeployProvider.swift */; };
 		DB64E3121E7672190007368E /* DMMoyaHttpErrorHandlePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64E3111E7672190007368E /* DMMoyaHttpErrorHandlePlugin.swift */; };
 		DB64E3141E7677650007368E /* DMCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64E3131E7677650007368E /* DMCache.swift */; };
@@ -77,6 +83,12 @@
 		DB0F4F301E79455500F1D1A5 /* Changeset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Changeset.swift; sourceTree = "<group>"; };
 		DB0F4F321E79457600F1D1A5 /* UI+SectionedViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UI+SectionedViewType.swift"; sourceTree = "<group>"; };
 		DB0F4F341E7945B000F1D1A5 /* Optional+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
+		DB0F4F471E8263A200F1D1A5 /* DMTableViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMTableViewController3.swift; sourceTree = "<group>"; };
+		DB0F4F491E8263B400F1D1A5 /* DMTableViewController3.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DMTableViewController3.storyboard; sourceTree = "<group>"; };
+		DB278C291E827D7A00326881 /* DMViewModel3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMViewModel3.swift; sourceTree = "<group>"; };
+		DB278C2B1E827DA900326881 /* DMService3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMService3.swift; sourceTree = "<group>"; };
+		DB278C2D1E8287A700326881 /* DMTableViewCell3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMTableViewCell3.swift; sourceTree = "<group>"; };
+		DB278C2E1E8287A700326881 /* DMTableViewCell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DMTableViewCell3.xib; sourceTree = "<group>"; };
 		DB64E30F1E766FA30007368E /* DMDeployProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMDeployProvider.swift; sourceTree = "<group>"; };
 		DB64E3111E7672190007368E /* DMMoyaHttpErrorHandlePlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMMoyaHttpErrorHandlePlugin.swift; sourceTree = "<group>"; };
 		DB64E3131E7677650007368E /* DMCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMCache.swift; sourceTree = "<group>"; };
@@ -179,6 +191,43 @@
 			path = service;
 			sourceTree = "<group>";
 		};
+		DB0F4F441E82634000F1D1A5 /* tableview3 */ = {
+			isa = PBXGroup;
+			children = (
+				DB278C281E827D4C00326881 /* viewmodel */,
+				DB0F4F461E82636A00F1D1A5 /* service */,
+				DB0F4F451E82635E00F1D1A5 /* controller */,
+			);
+			path = tableview3;
+			sourceTree = "<group>";
+		};
+		DB0F4F451E82635E00F1D1A5 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				DB0F4F471E8263A200F1D1A5 /* DMTableViewController3.swift */,
+				DB0F4F491E8263B400F1D1A5 /* DMTableViewController3.storyboard */,
+				DB278C2D1E8287A700326881 /* DMTableViewCell3.swift */,
+				DB278C2E1E8287A700326881 /* DMTableViewCell3.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		DB0F4F461E82636A00F1D1A5 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				DB278C2B1E827DA900326881 /* DMService3.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		DB278C281E827D4C00326881 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				DB278C291E827D7A00326881 /* DMViewModel3.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
 		DB8CA96B1E6E9053005DE3C1 = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +249,7 @@
 		DB8CA9761E6E9053005DE3C1 /* testRXLogin */ = {
 			isa = PBXGroup;
 			children = (
+				DB0F4F441E82634000F1D1A5 /* tableview3 */,
 				DB0F4F0D1E79404E00F1D1A5 /* tableview2 */,
 				DBFD30DF1E72846B0042F28A /* location */,
 				DBFD30D61E72467E0042F28A /* tableview */,
@@ -398,9 +448,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB0F4F131E79409E00F1D1A5 /* DMTableViewController2.storyboard in Resources */,
+				DB0F4F4A1E8263B400F1D1A5 /* DMTableViewController3.storyboard in Resources */,
 				DB8CA9901E6EA5EE005DE3C1 /* DMLoginViewController.storyboard in Resources */,
 				DBFD30E51E7284C60042F28A /* DMLocationViewController.storyboard in Resources */,
 				DB8CA9821E6E9053005DE3C1 /* LaunchScreen.storyboard in Resources */,
+				DB278C301E8287A700326881 /* DMTableViewCell3.xib in Resources */,
 				DB8CA97F1E6E9053005DE3C1 /* Assets.xcassets in Resources */,
 				DBFD30DE1E724CB00042F28A /* DMTableViewController.storyboard in Resources */,
 				DB8CA97D1E6E9053005DE3C1 /* Main.storyboard in Resources */,
@@ -474,20 +526,24 @@
 				DB0F4F211E79441B00F1D1A5 /* AnimatableSectionModelType.swift in Sources */,
 				DB8CA9981E6EAF8E005DE3C1 /* DMLoginProtocols.swift in Sources */,
 				DB8CA9781E6E9053005DE3C1 /* AppDelegate.swift in Sources */,
+				DB278C2C1E827DA900326881 /* DMService3.swift in Sources */,
 				DB0F4F1F1E7943F900F1D1A5 /* Array+Extensions.swift in Sources */,
 				DB0F4F331E79457600F1D1A5 /* UI+SectionedViewType.swift in Sources */,
 				DBFD30E71E7285450042F28A /* DMLocationService.swift in Sources */,
+				DB278C2F1E8287A700326881 /* DMTableViewCell3.swift in Sources */,
 				DB8CA9921E6EAADA005DE3C1 /* DMLoginViewModel.swift in Sources */,
 				DB8CA99A1E6FD96A005DE3C1 /* DMLoginHttp.swift in Sources */,
 				DB8CA9941E6EAB4B005DE3C1 /* DMLoginService.swift in Sources */,
 				DB0F4F231E79443D00F1D1A5 /* IdentifiableType.swift in Sources */,
 				DB0F4F251E79448C00F1D1A5 /* AnimatableSectionModelType+ItemPath.swift in Sources */,
 				DBFD30DC1E724CA80042F28A /* DMTableViewController.swift in Sources */,
+				DB0F4F481E8263A200F1D1A5 /* DMTableViewController3.swift in Sources */,
 				DB0F4F1D1E79439000F1D1A5 /* SectionModel.swift in Sources */,
 				DB64E3121E7672190007368E /* DMMoyaHttpErrorHandlePlugin.swift in Sources */,
 				DB64E3101E766FA30007368E /* DMDeployProvider.swift in Sources */,
 				DB8CA9A31E6FEDA4005DE3C1 /* DMUser.swift in Sources */,
 				DB0F4F351E7945B000F1D1A5 /* Optional+Extensions.swift in Sources */,
+				DB278C2A1E827D7A00326881 /* DMViewModel3.swift in Sources */,
 				DB0F4F151E79433B00F1D1A5 /* TableViewSectionedDataSource.swift in Sources */,
 				DB0F4F291E7944A800F1D1A5 /* ItemPath.swift in Sources */,
 				DBFD30EF1E728A050042F28A /* RxCLLocationManagerDelegateProxy.swift in Sources */,
