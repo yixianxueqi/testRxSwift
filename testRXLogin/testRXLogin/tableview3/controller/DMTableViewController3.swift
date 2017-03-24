@@ -23,7 +23,9 @@ class DMTableViewController3: UIViewController {
         // Do any additional setup after loading the view.
         
         automaticallyAdjustsScrollViewInsets = false
+        //配置viewModel
         viewModel.prepare(tableView: tableview, dataSource: dataSource)
+        //配置tableview
         deployTableView()
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -32,7 +34,10 @@ class DMTableViewController3: UIViewController {
         tableview.mj_header.beginRefreshing()
     }
     
-    func deployTableView() -> Void {
+    // MARK: - private
+    /// 配置tableview
+    /// 添加上下拉刷新 ，注册cell, 设置cell显示模型
+    private func deployTableView() -> Void {
         
         addRefresh()
         tableview.register(UINib.init(nibName: "DMTableViewCell3", bundle: nil), forCellReuseIdentifier: "cell")
@@ -44,7 +49,9 @@ class DMTableViewController3: UIViewController {
         }
     }
     
-    func addRefresh() -> Void {
+    /// 设置tableview的刷新
+    /// 添加上下拉刷新，订阅刷新状态的变化
+    private func addRefresh() -> Void {
         
         tableview.mj_header = MJRefreshNormalHeader.init(refreshingTarget: self, refreshingAction: #selector(refreshData))
         tableview.mj_footer = MJRefreshBackStateFooter.init(refreshingTarget: self, refreshingAction: #selector(refreshMoreData))
@@ -69,12 +76,12 @@ class DMTableViewController3: UIViewController {
         }
     }
     
-    func refreshData() -> Void {
+    @objc private func refreshData() -> Void {
         
         viewModel.refreshData()
     }
     
-    func refreshMoreData() -> Void {
+    @objc private func refreshMoreData() -> Void {
         
         viewModel.refreshMoreData()
     }
