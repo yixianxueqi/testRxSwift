@@ -12,7 +12,7 @@ import RxCocoa
 import MJRefresh
 import RxDataSources
 
-class DMTableViewController3: UIViewController {
+class DMTableViewController3: UIViewController, UITableViewDelegate {
     
     @IBOutlet weak var tableview: UITableView!
     let viewModel = DMViewModel3()

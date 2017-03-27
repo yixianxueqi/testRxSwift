@@ -10,23 +10,6 @@
 		8EE8FBDD966F777FA5DA6AA9 /* Pods_testRXLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B861ECA4B0DE0CE0942D8B3F /* Pods_testRXLogin.framework */; };
 		DB0F4F111E79408900F1D1A5 /* DMTableViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F101E79408900F1D1A5 /* DMTableViewController2.swift */; };
 		DB0F4F131E79409E00F1D1A5 /* DMTableViewController2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB0F4F121E79409E00F1D1A5 /* DMTableViewController2.storyboard */; };
-		DB0F4F151E79433B00F1D1A5 /* TableViewSectionedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F141E79433B00F1D1A5 /* TableViewSectionedDataSource.swift */; };
-		DB0F4F181E79435800F1D1A5 /* RxTableViewSectionedAnimatedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F161E79435800F1D1A5 /* RxTableViewSectionedAnimatedDataSource.swift */; };
-		DB0F4F191E79435800F1D1A5 /* RxTableViewSectionedReloadDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F171E79435800F1D1A5 /* RxTableViewSectionedReloadDataSource.swift */; };
-		DB0F4F1B1E79438200F1D1A5 /* SectionModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F1A1E79438200F1D1A5 /* SectionModelType.swift */; };
-		DB0F4F1D1E79439000F1D1A5 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F1C1E79439000F1D1A5 /* SectionModel.swift */; };
-		DB0F4F1F1E7943F900F1D1A5 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F1E1E7943F900F1D1A5 /* Array+Extensions.swift */; };
-		DB0F4F211E79441B00F1D1A5 /* AnimatableSectionModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F201E79441B00F1D1A5 /* AnimatableSectionModelType.swift */; };
-		DB0F4F231E79443D00F1D1A5 /* IdentifiableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F221E79443D00F1D1A5 /* IdentifiableType.swift */; };
-		DB0F4F251E79448C00F1D1A5 /* AnimatableSectionModelType+ItemPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F241E79448C00F1D1A5 /* AnimatableSectionModelType+ItemPath.swift */; };
-		DB0F4F271E79449700F1D1A5 /* AnimatableSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F261E79449700F1D1A5 /* AnimatableSectionModel.swift */; };
-		DB0F4F291E7944A800F1D1A5 /* ItemPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F281E7944A800F1D1A5 /* ItemPath.swift */; };
-		DB0F4F2B1E7944E500F1D1A5 /* AnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F2A1E7944E500F1D1A5 /* AnimationConfiguration.swift */; };
-		DB0F4F2D1E79452300F1D1A5 /* Differentiator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F2C1E79452300F1D1A5 /* Differentiator.swift */; };
-		DB0F4F2F1E79453A00F1D1A5 /* DataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F2E1E79453A00F1D1A5 /* DataSources.swift */; };
-		DB0F4F311E79455500F1D1A5 /* Changeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F301E79455500F1D1A5 /* Changeset.swift */; };
-		DB0F4F331E79457600F1D1A5 /* UI+SectionedViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F321E79457600F1D1A5 /* UI+SectionedViewType.swift */; };
-		DB0F4F351E7945B000F1D1A5 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F341E7945B000F1D1A5 /* Optional+Extensions.swift */; };
 		DB0F4F481E8263A200F1D1A5 /* DMTableViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0F4F471E8263A200F1D1A5 /* DMTableViewController3.swift */; };
 		DB0F4F4A1E8263B400F1D1A5 /* DMTableViewController3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB0F4F491E8263B400F1D1A5 /* DMTableViewController3.storyboard */; };
 		DB278C2A1E827D7A00326881 /* DMViewModel3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB278C291E827D7A00326881 /* DMViewModel3.swift */; };
@@ -54,6 +37,8 @@
 		DBD7B5691E88F35D009140A0 /* UIImagePickerController+RxCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD7B5681E88F35D009140A0 /* UIImagePickerController+RxCreate.swift */; };
 		DBD7B56C1E88F385009140A0 /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD7B56A1E88F385009140A0 /* RxImagePickerDelegateProxy.swift */; };
 		DBD7B56D1E88F385009140A0 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD7B56B1E88F385009140A0 /* UIImagePickerController+Rx.swift */; };
+		DBE5C4061E89095500D25E63 /* DMTableViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE5C4051E89095500D25E63 /* DMTableViewController4.swift */; };
+		DBE5C4081E89096100D25E63 /* DMTableViewController4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE5C4071E89096100D25E63 /* DMTableViewController4.storyboard */; };
 		DBFD30DC1E724CA80042F28A /* DMTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD30DB1E724CA80042F28A /* DMTableViewController.swift */; };
 		DBFD30DE1E724CB00042F28A /* DMTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFD30DD1E724CB00042F28A /* DMTableViewController.storyboard */; };
 		DBFD30E31E7284B70042F28A /* DMLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD30E21E7284B70042F28A /* DMLocationViewController.swift */; };
@@ -71,23 +56,6 @@
 		B861ECA4B0DE0CE0942D8B3F /* Pods_testRXLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testRXLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB0F4F101E79408900F1D1A5 /* DMTableViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMTableViewController2.swift; sourceTree = "<group>"; };
 		DB0F4F121E79409E00F1D1A5 /* DMTableViewController2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DMTableViewController2.storyboard; sourceTree = "<group>"; };
-		DB0F4F141E79433B00F1D1A5 /* TableViewSectionedDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewSectionedDataSource.swift; sourceTree = "<group>"; };
-		DB0F4F161E79435800F1D1A5 /* RxTableViewSectionedAnimatedDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxTableViewSectionedAnimatedDataSource.swift; sourceTree = "<group>"; };
-		DB0F4F171E79435800F1D1A5 /* RxTableViewSectionedReloadDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxTableViewSectionedReloadDataSource.swift; sourceTree = "<group>"; };
-		DB0F4F1A1E79438200F1D1A5 /* SectionModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionModelType.swift; sourceTree = "<group>"; };
-		DB0F4F1C1E79439000F1D1A5 /* SectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
-		DB0F4F1E1E7943F900F1D1A5 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
-		DB0F4F201E79441B00F1D1A5 /* AnimatableSectionModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableSectionModelType.swift; sourceTree = "<group>"; };
-		DB0F4F221E79443D00F1D1A5 /* IdentifiableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifiableType.swift; sourceTree = "<group>"; };
-		DB0F4F241E79448C00F1D1A5 /* AnimatableSectionModelType+ItemPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimatableSectionModelType+ItemPath.swift"; sourceTree = "<group>"; };
-		DB0F4F261E79449700F1D1A5 /* AnimatableSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableSectionModel.swift; sourceTree = "<group>"; };
-		DB0F4F281E7944A800F1D1A5 /* ItemPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPath.swift; sourceTree = "<group>"; };
-		DB0F4F2A1E7944E500F1D1A5 /* AnimationConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationConfiguration.swift; sourceTree = "<group>"; };
-		DB0F4F2C1E79452300F1D1A5 /* Differentiator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Differentiator.swift; sourceTree = "<group>"; };
-		DB0F4F2E1E79453A00F1D1A5 /* DataSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSources.swift; sourceTree = "<group>"; };
-		DB0F4F301E79455500F1D1A5 /* Changeset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Changeset.swift; sourceTree = "<group>"; };
-		DB0F4F321E79457600F1D1A5 /* UI+SectionedViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UI+SectionedViewType.swift"; sourceTree = "<group>"; };
-		DB0F4F341E7945B000F1D1A5 /* Optional+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
 		DB0F4F471E8263A200F1D1A5 /* DMTableViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMTableViewController3.swift; sourceTree = "<group>"; };
 		DB0F4F491E8263B400F1D1A5 /* DMTableViewController3.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DMTableViewController3.storyboard; sourceTree = "<group>"; };
 		DB278C291E827D7A00326881 /* DMViewModel3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMViewModel3.swift; sourceTree = "<group>"; };
@@ -117,6 +85,8 @@
 		DBD7B5681E88F35D009140A0 /* UIImagePickerController+RxCreate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+RxCreate.swift"; sourceTree = "<group>"; };
 		DBD7B56A1E88F385009140A0 /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
 		DBD7B56B1E88F385009140A0 /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
+		DBE5C4051E89095500D25E63 /* DMTableViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMTableViewController4.swift; sourceTree = "<group>"; };
+		DBE5C4071E89096100D25E63 /* DMTableViewController4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DMTableViewController4.storyboard; sourceTree = "<group>"; };
 		DBFD30DB1E724CA80042F28A /* DMTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMTableViewController.swift; sourceTree = "<group>"; };
 		DBFD30DD1E724CB00042F28A /* DMTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DMTableViewController.storyboard; sourceTree = "<group>"; };
 		DBFD30E21E7284B70042F28A /* DMLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMLocationViewController.swift; sourceTree = "<group>"; };
@@ -180,23 +150,6 @@
 		DB0F4F0F1E79404E00F1D1A5 /* service */ = {
 			isa = PBXGroup;
 			children = (
-				DB0F4F341E7945B000F1D1A5 /* Optional+Extensions.swift */,
-				DB0F4F301E79455500F1D1A5 /* Changeset.swift */,
-				DB0F4F2E1E79453A00F1D1A5 /* DataSources.swift */,
-				DB0F4F2C1E79452300F1D1A5 /* Differentiator.swift */,
-				DB0F4F2A1E7944E500F1D1A5 /* AnimationConfiguration.swift */,
-				DB0F4F281E7944A800F1D1A5 /* ItemPath.swift */,
-				DB0F4F261E79449700F1D1A5 /* AnimatableSectionModel.swift */,
-				DB0F4F241E79448C00F1D1A5 /* AnimatableSectionModelType+ItemPath.swift */,
-				DB0F4F221E79443D00F1D1A5 /* IdentifiableType.swift */,
-				DB0F4F201E79441B00F1D1A5 /* AnimatableSectionModelType.swift */,
-				DB0F4F1E1E7943F900F1D1A5 /* Array+Extensions.swift */,
-				DB0F4F1C1E79439000F1D1A5 /* SectionModel.swift */,
-				DB0F4F1A1E79438200F1D1A5 /* SectionModelType.swift */,
-				DB0F4F161E79435800F1D1A5 /* RxTableViewSectionedAnimatedDataSource.swift */,
-				DB0F4F171E79435800F1D1A5 /* RxTableViewSectionedReloadDataSource.swift */,
-				DB0F4F141E79433B00F1D1A5 /* TableViewSectionedDataSource.swift */,
-				DB0F4F321E79457600F1D1A5 /* UI+SectionedViewType.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -259,6 +212,7 @@
 		DB8CA9761E6E9053005DE3C1 /* testRXLogin */ = {
 			isa = PBXGroup;
 			children = (
+				DBE5C4021E89091C00D25E63 /* tableview4 */,
 				DBD7B5611E88ED2A009140A0 /* imagePicker */,
 				DB0F4F441E82634000F1D1A5 /* tableview3 */,
 				DB0F4F0D1E79404E00F1D1A5 /* tableview2 */,
@@ -349,6 +303,31 @@
 				DBD7B56A1E88F385009140A0 /* RxImagePickerDelegateProxy.swift */,
 				DBD7B56B1E88F385009140A0 /* UIImagePickerController+Rx.swift */,
 				DBD7B5681E88F35D009140A0 /* UIImagePickerController+RxCreate.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		DBE5C4021E89091C00D25E63 /* tableview4 */ = {
+			isa = PBXGroup;
+			children = (
+				DBE5C4041E89093D00D25E63 /* service */,
+				DBE5C4031E89093100D25E63 /* controller */,
+			);
+			path = tableview4;
+			sourceTree = "<group>";
+		};
+		DBE5C4031E89093100D25E63 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBE5C4051E89095500D25E63 /* DMTableViewController4.swift */,
+				DBE5C4071E89096100D25E63 /* DMTableViewController4.storyboard */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		DBE5C4041E89093D00D25E63 /* service */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -492,6 +471,7 @@
 				DBFD30E51E7284C60042F28A /* DMLocationViewController.storyboard in Resources */,
 				DBD7B5671E88ED76009140A0 /* DMImagePickerViewController.storyboard in Resources */,
 				DB8CA9821E6E9053005DE3C1 /* LaunchScreen.storyboard in Resources */,
+				DBE5C4081E89096100D25E63 /* DMTableViewController4.storyboard in Resources */,
 				DB278C301E8287A700326881 /* DMTableViewCell3.xib in Resources */,
 				DB8CA97F1E6E9053005DE3C1 /* Assets.xcassets in Resources */,
 				DBFD30DE1E724CB00042F28A /* DMTableViewController.storyboard in Resources */,
@@ -554,50 +534,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB0F4F271E79449700F1D1A5 /* AnimatableSectionModel.swift in Sources */,
-				DB0F4F191E79435800F1D1A5 /* RxTableViewSectionedReloadDataSource.swift in Sources */,
 				DB8CA97A1E6E9053005DE3C1 /* ViewController.swift in Sources */,
-				DB0F4F2B1E7944E500F1D1A5 /* AnimationConfiguration.swift in Sources */,
-				DB0F4F2F1E79453A00F1D1A5 /* DataSources.swift in Sources */,
 				DB8CA9961E6EAB66005DE3C1 /* DMLoginResult.swift in Sources */,
-				DB0F4F311E79455500F1D1A5 /* Changeset.swift in Sources */,
-				DB0F4F2D1E79452300F1D1A5 /* Differentiator.swift in Sources */,
 				DB8CA98E1E6EA5D3005DE3C1 /* DMLoginViewController.swift in Sources */,
 				DBD7B5651E88ED67009140A0 /* DMImagePickerViewController.swift in Sources */,
-				DB0F4F211E79441B00F1D1A5 /* AnimatableSectionModelType.swift in Sources */,
 				DB8CA9981E6EAF8E005DE3C1 /* DMLoginProtocols.swift in Sources */,
 				DB8CA9781E6E9053005DE3C1 /* AppDelegate.swift in Sources */,
 				DB278C2C1E827DA900326881 /* DMService3.swift in Sources */,
-				DB0F4F1F1E7943F900F1D1A5 /* Array+Extensions.swift in Sources */,
-				DB0F4F331E79457600F1D1A5 /* UI+SectionedViewType.swift in Sources */,
 				DBFD30E71E7285450042F28A /* DMLocationService.swift in Sources */,
 				DB278C2F1E8287A700326881 /* DMTableViewCell3.swift in Sources */,
 				DB8CA9921E6EAADA005DE3C1 /* DMLoginViewModel.swift in Sources */,
 				DB8CA99A1E6FD96A005DE3C1 /* DMLoginHttp.swift in Sources */,
 				DB8CA9941E6EAB4B005DE3C1 /* DMLoginService.swift in Sources */,
-				DB0F4F231E79443D00F1D1A5 /* IdentifiableType.swift in Sources */,
-				DB0F4F251E79448C00F1D1A5 /* AnimatableSectionModelType+ItemPath.swift in Sources */,
 				DBFD30DC1E724CA80042F28A /* DMTableViewController.swift in Sources */,
 				DB0F4F481E8263A200F1D1A5 /* DMTableViewController3.swift in Sources */,
-				DB0F4F1D1E79439000F1D1A5 /* SectionModel.swift in Sources */,
 				DBD7B56D1E88F385009140A0 /* UIImagePickerController+Rx.swift in Sources */,
 				DB64E3121E7672190007368E /* DMMoyaHttpErrorHandlePlugin.swift in Sources */,
 				DB64E3101E766FA30007368E /* DMDeployProvider.swift in Sources */,
 				DBD7B56C1E88F385009140A0 /* RxImagePickerDelegateProxy.swift in Sources */,
 				DB8CA9A31E6FEDA4005DE3C1 /* DMUser.swift in Sources */,
-				DB0F4F351E7945B000F1D1A5 /* Optional+Extensions.swift in Sources */,
 				DB278C2A1E827D7A00326881 /* DMViewModel3.swift in Sources */,
-				DB0F4F151E79433B00F1D1A5 /* TableViewSectionedDataSource.swift in Sources */,
-				DB0F4F291E7944A800F1D1A5 /* ItemPath.swift in Sources */,
 				DBD7B5691E88F35D009140A0 /* UIImagePickerController+RxCreate.swift in Sources */,
 				DBFD30EF1E728A050042F28A /* RxCLLocationManagerDelegateProxy.swift in Sources */,
 				DBFD30F11E72B2590042F28A /* DMAlert.swift in Sources */,
 				DB64E3141E7677650007368E /* DMCache.swift in Sources */,
-				DB0F4F1B1E79438200F1D1A5 /* SectionModelType.swift in Sources */,
 				DB0F4F111E79408900F1D1A5 /* DMTableViewController2.swift in Sources */,
-				DB0F4F181E79435800F1D1A5 /* RxTableViewSectionedAnimatedDataSource.swift in Sources */,
 				DBFD30EE1E728A050042F28A /* CLLocationManager+Rx.swift in Sources */,
 				DBFD30E31E7284B70042F28A /* DMLocationViewController.swift in Sources */,
+				DBE5C4061E89095500D25E63 /* DMTableViewController4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
