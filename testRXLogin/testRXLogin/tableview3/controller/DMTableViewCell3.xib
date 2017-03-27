@@ -24,14 +24,28 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjB-TW-iUL">
+                        <rect key="frame" x="197" y="6" width="99" height="30"/>
+                        <color key="backgroundColor" red="0.16784927929999999" green="0.70731794270000004" blue="0.99938841540000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="tap">
+                            <color key="titleColor" red="0.99919113010000005" green="0.99919113010000005" blue="0.99919113010000005" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clickButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UUt-Bs-N2P"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="sjB-TW-iUL" firstAttribute="centerY" secondItem="yRO-ac-1b0" secondAttribute="centerY" id="0J4-kt-Y2Z"/>
                     <constraint firstItem="yRO-ac-1b0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GPe-tn-oJX"/>
+                    <constraint firstAttribute="trailing" secondItem="sjB-TW-iUL" secondAttribute="trailing" constant="24" id="dLw-dP-TrO"/>
                     <constraint firstItem="yRO-ac-1b0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="iJQ-xl-Hcp"/>
+                    <constraint firstItem="sjB-TW-iUL" firstAttribute="leading" secondItem="yRO-ac-1b0" secondAttribute="trailing" constant="16" id="xHE-kp-2La"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="defineLabel" destination="yRO-ac-1b0" id="mm8-Yy-jWd"/>
+                <outlet property="tapButton" destination="sjB-TW-iUL" id="Df2-KJ-fEd"/>
             </connections>
         </tableViewCell>
     </objects>

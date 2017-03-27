@@ -30,7 +30,7 @@ class DMViewModel3: NSObject {
     //刷新状态
     var refreshStatus: Variable<DMRefresh>?
     //原始数据源
-    var dataList: [String] = []
+    dynamic var dataList: [String] = []
     let disposeBag = DisposeBag()
     
     

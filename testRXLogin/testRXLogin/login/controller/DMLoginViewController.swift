@@ -56,6 +56,15 @@ class DMLoginViewController: UIViewController {
             print("signUp success \($0)")
             self?.alert()
         }).addDisposableTo(disposeBag)
+        
+        //监听键盘弹出通知
+        NotificationCenter.default.rx.notification(.UIKeyboardWillShow, object: nil)
+        .map { notification -> CGRect in
+            print(notification)
+            return notification.userInfo!["UIKeyboardBoundsUserInfoKey"] as! CGRect
+        }.subscribe {
+            print($0)
+        }.addDisposableTo(disposeBag)
     }
     
     func alert() -> Void {
@@ -63,6 +72,12 @@ class DMLoginViewController: UIViewController {
         let action = UIAlertAction.init(title: "知道了", style: .cancel, handler: nil)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        
+        view.endEditing(true)
     }
 }
 

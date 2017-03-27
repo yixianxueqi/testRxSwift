@@ -21,13 +21,13 @@ class DMLoginViewModel {
     //    var signing: Driver<Bool>
     
     init(input:(
-            userName: Driver<String>,
-            pwd: Driver<String>,
-            repeatPwd: Driver<String>,
-            loginTaps: Driver<Void>),
+        userName: Driver<String>,
+        pwd: Driver<String>,
+        repeatPwd: Driver<String>,
+        loginTaps: Driver<Void>),
          dependency:(
-            validService: DMLoginValidService,
-            httpService:DMLoginHttpService)
+        validService: DMLoginValidService,
+        httpService:DMLoginHttpService)
         ) {
         
         let validService = dependency.validService
@@ -39,7 +39,7 @@ class DMLoginViewModel {
         }
         validatePwd = input.pwd.map {
             return validService.validationPassword($0)
-            }
+        }
         validateRepeatPwd = Driver.combineLatest(input.pwd, input.repeatPwd, resultSelector: validService.validationRepeatPwd)
         
         signBtnEnable = Driver.combineLatest(validateUserName, validatePwd, validateRepeatPwd) {
@@ -47,11 +47,12 @@ class DMLoginViewModel {
             }.distinctUntilChanged()
         
         let usernameAndPwd = Driver.combineLatest(input.userName, input.pwd) { ($0, $1) }
-//        signed = Driver.just(true)
+        //        signed = Driver.just(true)
         signed = input.loginTaps.withLatestFrom(usernameAndPwd)
-        .flatMapLatest({
-            return httpService.signUp(userName: $0, pwd: $1)
-                .asDriver(onErrorJustReturn: false)
-        })
+            .throttle(0.5)
+            .flatMapLatest({
+                return httpService.signUp(userName: $0, pwd: $1)
+                    .asDriver(onErrorJustReturn: false)
+            })
     }
 }

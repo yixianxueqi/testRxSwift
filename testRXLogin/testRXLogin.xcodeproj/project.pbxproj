@@ -49,6 +49,11 @@
 		DB8CA9981E6EAF8E005DE3C1 /* DMLoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8CA9971E6EAF8E005DE3C1 /* DMLoginProtocols.swift */; };
 		DB8CA99A1E6FD96A005DE3C1 /* DMLoginHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8CA9991E6FD96A005DE3C1 /* DMLoginHttp.swift */; };
 		DB8CA9A31E6FEDA4005DE3C1 /* DMUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8CA9A21E6FEDA4005DE3C1 /* DMUser.swift */; };
+		DBD7B5651E88ED67009140A0 /* DMImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD7B5641E88ED67009140A0 /* DMImagePickerViewController.swift */; };
+		DBD7B5671E88ED76009140A0 /* DMImagePickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD7B5661E88ED76009140A0 /* DMImagePickerViewController.storyboard */; };
+		DBD7B5691E88F35D009140A0 /* UIImagePickerController+RxCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD7B5681E88F35D009140A0 /* UIImagePickerController+RxCreate.swift */; };
+		DBD7B56C1E88F385009140A0 /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD7B56A1E88F385009140A0 /* RxImagePickerDelegateProxy.swift */; };
+		DBD7B56D1E88F385009140A0 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD7B56B1E88F385009140A0 /* UIImagePickerController+Rx.swift */; };
 		DBFD30DC1E724CA80042F28A /* DMTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD30DB1E724CA80042F28A /* DMTableViewController.swift */; };
 		DBFD30DE1E724CB00042F28A /* DMTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFD30DD1E724CB00042F28A /* DMTableViewController.storyboard */; };
 		DBFD30E31E7284B70042F28A /* DMLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD30E21E7284B70042F28A /* DMLocationViewController.swift */; };
@@ -107,6 +112,11 @@
 		DB8CA9971E6EAF8E005DE3C1 /* DMLoginProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMLoginProtocols.swift; sourceTree = "<group>"; };
 		DB8CA9991E6FD96A005DE3C1 /* DMLoginHttp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMLoginHttp.swift; sourceTree = "<group>"; };
 		DB8CA9A21E6FEDA4005DE3C1 /* DMUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMUser.swift; sourceTree = "<group>"; };
+		DBD7B5641E88ED67009140A0 /* DMImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMImagePickerViewController.swift; sourceTree = "<group>"; };
+		DBD7B5661E88ED76009140A0 /* DMImagePickerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DMImagePickerViewController.storyboard; sourceTree = "<group>"; };
+		DBD7B5681E88F35D009140A0 /* UIImagePickerController+RxCreate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+RxCreate.swift"; sourceTree = "<group>"; };
+		DBD7B56A1E88F385009140A0 /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
+		DBD7B56B1E88F385009140A0 /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
 		DBFD30DB1E724CA80042F28A /* DMTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMTableViewController.swift; sourceTree = "<group>"; };
 		DBFD30DD1E724CB00042F28A /* DMTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DMTableViewController.storyboard; sourceTree = "<group>"; };
 		DBFD30E21E7284B70042F28A /* DMLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMLocationViewController.swift; sourceTree = "<group>"; };
@@ -249,6 +259,7 @@
 		DB8CA9761E6E9053005DE3C1 /* testRXLogin */ = {
 			isa = PBXGroup;
 			children = (
+				DBD7B5611E88ED2A009140A0 /* imagePicker */,
 				DB0F4F441E82634000F1D1A5 /* tableview3 */,
 				DB0F4F0D1E79404E00F1D1A5 /* tableview2 */,
 				DBFD30DF1E72846B0042F28A /* location */,
@@ -312,6 +323,34 @@
 				DB8CA9A21E6FEDA4005DE3C1 /* DMUser.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		DBD7B5611E88ED2A009140A0 /* imagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				DBD7B5631E88ED47009140A0 /* service */,
+				DBD7B5621E88ED3A009140A0 /* controller */,
+			);
+			path = imagePicker;
+			sourceTree = "<group>";
+		};
+		DBD7B5621E88ED3A009140A0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				DBD7B5641E88ED67009140A0 /* DMImagePickerViewController.swift */,
+				DBD7B5661E88ED76009140A0 /* DMImagePickerViewController.storyboard */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		DBD7B5631E88ED47009140A0 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				DBD7B56A1E88F385009140A0 /* RxImagePickerDelegateProxy.swift */,
+				DBD7B56B1E88F385009140A0 /* UIImagePickerController+Rx.swift */,
+				DBD7B5681E88F35D009140A0 /* UIImagePickerController+RxCreate.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 		DBFD30D61E72467E0042F28A /* tableview */ = {
@@ -451,6 +490,7 @@
 				DB0F4F4A1E8263B400F1D1A5 /* DMTableViewController3.storyboard in Resources */,
 				DB8CA9901E6EA5EE005DE3C1 /* DMLoginViewController.storyboard in Resources */,
 				DBFD30E51E7284C60042F28A /* DMLocationViewController.storyboard in Resources */,
+				DBD7B5671E88ED76009140A0 /* DMImagePickerViewController.storyboard in Resources */,
 				DB8CA9821E6E9053005DE3C1 /* LaunchScreen.storyboard in Resources */,
 				DB278C301E8287A700326881 /* DMTableViewCell3.xib in Resources */,
 				DB8CA97F1E6E9053005DE3C1 /* Assets.xcassets in Resources */,
@@ -523,6 +563,7 @@
 				DB0F4F311E79455500F1D1A5 /* Changeset.swift in Sources */,
 				DB0F4F2D1E79452300F1D1A5 /* Differentiator.swift in Sources */,
 				DB8CA98E1E6EA5D3005DE3C1 /* DMLoginViewController.swift in Sources */,
+				DBD7B5651E88ED67009140A0 /* DMImagePickerViewController.swift in Sources */,
 				DB0F4F211E79441B00F1D1A5 /* AnimatableSectionModelType.swift in Sources */,
 				DB8CA9981E6EAF8E005DE3C1 /* DMLoginProtocols.swift in Sources */,
 				DB8CA9781E6E9053005DE3C1 /* AppDelegate.swift in Sources */,
@@ -539,13 +580,16 @@
 				DBFD30DC1E724CA80042F28A /* DMTableViewController.swift in Sources */,
 				DB0F4F481E8263A200F1D1A5 /* DMTableViewController3.swift in Sources */,
 				DB0F4F1D1E79439000F1D1A5 /* SectionModel.swift in Sources */,
+				DBD7B56D1E88F385009140A0 /* UIImagePickerController+Rx.swift in Sources */,
 				DB64E3121E7672190007368E /* DMMoyaHttpErrorHandlePlugin.swift in Sources */,
 				DB64E3101E766FA30007368E /* DMDeployProvider.swift in Sources */,
+				DBD7B56C1E88F385009140A0 /* RxImagePickerDelegateProxy.swift in Sources */,
 				DB8CA9A31E6FEDA4005DE3C1 /* DMUser.swift in Sources */,
 				DB0F4F351E7945B000F1D1A5 /* Optional+Extensions.swift in Sources */,
 				DB278C2A1E827D7A00326881 /* DMViewModel3.swift in Sources */,
 				DB0F4F151E79433B00F1D1A5 /* TableViewSectionedDataSource.swift in Sources */,
 				DB0F4F291E7944A800F1D1A5 /* ItemPath.swift in Sources */,
+				DBD7B5691E88F35D009140A0 /* UIImagePickerController+RxCreate.swift in Sources */,
 				DBFD30EF1E728A050042F28A /* RxCLLocationManagerDelegateProxy.swift in Sources */,
 				DBFD30F11E72B2590042F28A /* DMAlert.swift in Sources */,
 				DB64E3141E7677650007368E /* DMCache.swift in Sources */,

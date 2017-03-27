@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+
+typealias DMCellAction = (Observable<String>) -> Void
 
 class DMTableViewCell3: UITableViewCell {
 
-    
     @IBOutlet weak var defineLabel: UILabel!
+    @IBOutlet weak var tapButton: UIButton!
+    
+    var cellBlock: DMCellAction?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,6 +28,17 @@ class DMTableViewCell3: UITableViewCell {
     func setModel(_ str: String) -> Void {
     
         defineLabel.text = str
+    }
+    //按钮点击事件
+    @IBAction func clickButton(_ sender: UIButton) {
+        
+        if let cellBlock = self.cellBlock {
+            cellBlock(Observable.create({ (observe) -> Disposable in
+                observe.onNext(self.defineLabel.text!)
+                observe.onCompleted()
+                return Disposables.create()
+            }))
+        }
     }
     
 }
